@@ -1,0 +1,46 @@
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.copyright h1 {
+    font-size: 1rem;
+}
+.copyright p {
+    font-size: 0.8rem;
+}
+
+.social {
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    margin: 0 10px;
+}
+
+@media (max-width:760px) {
+    .footer{
+        position: relative;
+        display: flex;
+        padding-bottom: 5px;
+    }
+
+    .copyright h1,
+    .copyright p {
+        text-align: center;
+    }
+}

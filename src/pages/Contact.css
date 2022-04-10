@@ -1,0 +1,88 @@
+
+/* Showcase */
+
+.contact {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+    margin-bottom: 100px;
+}
+.contact h1 {
+    font-size: 40px;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+.contact .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.contact-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.contact-form {
+    position: relative;
+    top: 60px;
+    height: 450px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.contact-form .form-control {
+    margin: 30px 0;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    resize: none;
+    font-family: 'Lato';
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+
+
+@media(max-width: 1000px) {
+    .contact .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contact {
+        height: auto;
+    }
+
+    .contact-text {
+        text-align: center;
+        margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    .contact-form {
+        top: 20px;
+        justify-self: center;
+        margin: auto;
+        animation: slideInFromBottom 1s ease-in;
+    }
+    
+}
